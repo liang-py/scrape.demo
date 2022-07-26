@@ -19,7 +19,7 @@ class AuthorizationDownloadMiddleware(object):
     # def process_request(self, request, spider):
     #     request.headers['authorization'] = self.authorization
 
-    accountpool_url = 'http://localhost:6789/antispider7/random'
+    accountpool_url = 'http://192.168.31.54:6789/antispider7/random'
     logger = logging.getLogger('middleware.authorization')
 
     async def process_request(self, request, spider):
@@ -35,7 +35,7 @@ class AuthorizationDownloadMiddleware(object):
 
 class ProxyDownloadMiddleware(object):
     # 代理池地址
-    proxypool_url = 'http://localhost:5555/random'
+    proxypool_url = 'http://192.168.31.54:5555/random'
     logger = logging.getLogger('middlewares.proxy')
 
     # 异步请求，获取代理，配置settings.py以支持asyncio
