@@ -100,4 +100,4 @@ DOWNLOADER_MIDDLEWARES = {
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
-REDIS_URL = "redis://192.168.34.56:6379"
+REDIS_URL = "redis://192.168.31.54:6379"
